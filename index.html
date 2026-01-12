@@ -12,44 +12,58 @@
 </head>
 
 <body style="background-color: #000000;" class="">
-    <header class="container w-75">
-    <nav class="navbar navbar-expand-lg navbar-dark p-4">
-        <div class="container-fluid">
+
+<header style="background-color: #000000;" class="container-fluid px-0 shadow-sm">
+    <div class="row g-0 justify-content-center" style="background-color: #000000;">
+        
+        <div class="col-12 col-lg-9">
             
-            <a class="navbar-brand me-auto" href="#">
-                <img src="./icons/logo.png" class="img-fluid" style="max-width: 100px;" alt="Logo">
-            </a>
+            <nav class="navbar navbar-expand-lg navbar-dark p-4">
+                <div class="container-fluid px-0">
+                    
+                    <a class="navbar-brand" href="#">
+                        <img src="./icons/logo.png" style="max-width: 80px;" class="img-fluid" alt="Logo">
+                    </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto gap-lg-5 text-center align-items-center">
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Skill</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">About</a>
-                    </li>
-                    <li class="nav-item mt-3 mt-lg-0">
-                        <a href="./assests/mehedicv.pdf" download="My_Resume.pdf" class="text-decoration-none">
-                            <button class="btn btn-outline-light btn-sm">
-                                <i class="fa-solid fa-download"></i> Resume
-                            </button>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto gap-lg-5 text-center align-items-center">
+                            <li class="nav-item">
+                                <a class="nav-link text-white fw-medium" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white fw-medium" href="#">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white fw-medium" href="#">Skill</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white fw-medium" href="#">About</a>
+                            </li>
+                            <li class="nav-item mt-3 mt-lg-0">
+                                <a href="./assests/mehedicv.pdf" download class="text-decoration-none">
+                                    <button class="btn btn-outline-info btn-sm px-4">
+                                        <i class="fa-solid fa-download"></i> Resume
+                                    </button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
         </div>
-    </nav>
+    </div>
 </header>
+
+
+
+
+
+
 
     <main class="text-white">
         <div class="banner w-75   mx-auto mt-5 text-white d-flex justify-content-between align-items-center p-5">
@@ -92,64 +106,29 @@
         <!-- portfolio -->
 
         <h2 class="text-center text-white mt-4">Architect</h2>
-        <div class="w-75 border mx-auto mt-5 d-flex gap-5" style="height: 400px;">
-            <div class="picture w-50" style="height: 100%;">
+        <div class="portfolio-card d-flex border border-secondary mx-auto mb-5 mt-5" style="height: 400px; max-width: 1000px;">
+            <div class="picture w-50">
                 <div id="architectCarousel" class="carousel slide h-100" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#architectCarousel" data-bs-slide-to="0"
-                            class="active"></button>
-                        <button type="button" data-bs-target="#architectCarousel" data-bs-slide-to="1"></button>
-                        <button type="button" data-bs-target="#architectCarousel" data-bs-slide-to="2"></button>
-                    </div>
-
                     <div class="carousel-inner h-100">
-                        <div class="carousel-item active h-100" data-bs-interval="3000"> <img
-                                src="./images/Architect.png" class="d-block w-100 h-100" style="object-fit: cover;"
-                                alt="Project 1">
-                        </div>
-                        <div class="carousel-item h-100" data-bs-interval="3000">
-                            <img src="./images/architect2.png" class="d-block w-100 h-100" style="object-fit: cover;"
-                                alt="Project 2">
-                        </div>
-
+                        <div class="carousel-item active h-100"><img src="./images/Architect.png" class="d-block w-100 h-100" style="object-fit: cover;"></div>
+                        <div class="carousel-item h-100"><img src="./images/architect2.png" class="d-block w-100 h-100" style="object-fit: cover;"></div>
                     </div>
-
-                    <button class="carousel-control-prev" type="button" data-bs-target="#architectCarousel"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#architectCarousel"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    </button>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#architectCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#architectCarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
                 </div>
             </div>
-
-
-            <div class="contain w-50 d-flex flex-column justify-content-center" style="height: 100%;">
-                <h3 style="color: #00FFFF;">Architect Website
-                    <a target="_blank" style="color: #fff;" href="https://programming-hero-architect.netlify.app/"><i
-                            class="fa-solid fa-earth-africa"></i></a>
-                </h3>
-                <p class="fs-6">Architectural Designer & Visualizer. Passionate about transforming ideas into structural
-                    realities. Focused on modern design, urban planning, and innovative spatial solutions</p>
-
-                <p>Designing spaces that tell a story. I specialize in creating architectural visualizations and
+            <div class="contain w-50 p-4 d-flex flex-column justify-content-center bg-dark">
+                <h3 class="text-info">Architect Website <a href="https://programming-hero-architect.netlify.app/" target="_blank" class="text-white ms-2"><i class="fa-solid fa-link fs-5"></i></a></h3>
+                <p class="small text-secondary">Architectural Designer & Visualizer. Focused on modern design and innovative spatial solutions.</p>
+                
+                <p class="small text-secondary">Designing spaces that tell a story. I specialize in creating architectural visualizations and
                     structural designs that blend aesthetics with functionality. Every line I draw and every space I
                     create is a step toward building a better, more sustainable environment.</p>
-
-                <div class="mt-5">
-                    <ul class="d-flex list-unstyled justify-content-center gap-5 ">
-                        <li><a style="background-color: #808080;"
-                                class="text-white text-decoration-none  px-4 fs-5 py-2 rounded-2" href="">Html</a></li>
-                        <li><a style="background-color: #808080;"
-                                class="text-white text-decoration-none  px-4 fs-5 py-2 rounded-2" href="">Css</a></li>
-                        <li><a style="background-color: #808080;"
-                                class="text-white text-decoration-none  px-4 fs-5 py-2 rounded-2" href="">Js</a></li>
-
-                    </ul>
+                <div class="mt-3 d-flex flex-wrap gap-2">
+                    <span class="badge bg-secondary px-3 py-2">HTML</span>
+                    <span class="badge bg-secondary px-3 py-2">CSS</span>
+                    <span class="badge bg-secondary px-3 py-2">JS</span>
                 </div>
-
             </div>
         </div>
 
@@ -162,27 +141,26 @@
             <h2 class="fw-bold">Experties :</h2>
             <div class="mt-4">
                 <ul class="d-flex list-unstyled  gap-3 ">
-                    <li><a style="background-color: #808080;"
-                            class="text-white text-decoration-none  px-1 fs-6 py-1 rounded-2" href="">React.js</a></li>
-                    <li><a style="background-color: #808080;"
-                            class="text-white text-decoration-none  px-1 fs-6 py-1 rounded-2" href="">JavaScript</a>
+                    <li><a style="background-color: #333;"
+                            class="text-white text-decoration-none px-3 py-2 fs-6 rounded-2 border border-secondary" href="">React.js</a></li>
+                    <li><a style="background-color: #333;"
+                            class="text-white text-decoration-none px-3 py-2 fs-6 rounded-2 border border-secondary" href="">JavaScript</a>
                     </li>
-                    <li><a style="background-color: #808080;"
-                            class="text-white text-decoration-none  px-1 fs-6 py-1 rounded-2" href="">Node.js</a></li>
+                    <li><a style="background-color: #333;"
+                            class="text-white text-decoration-none px-3 py-2 fs-6 rounded-2 border border-secondary" href="">Node.js</a></li>
 
-                    <li><a style="background-color: #808080;"
-                            class="text-white text-decoration-none  px-1 fs-6 py-1 rounded-2" href="">Firebase</a>
+                    <li><a style="background-color: #333;"
+                            class="text-white text-decoration-none px-3 py-2 fs-6 rounded-2 border border-secondary" href="">Firebase</a>
                 </ul>
             </div>
             <div class="mt-4">
                 <ul class="d-flex list-unstyled  gap-3 ">
-                    <li><a style="background-color: #808080;"
-                            class="text-white text-decoration-none  px-1 fs-6 py-1 rounded-2" href="">Html</a></li>
-                    <li><a style="background-color: #808080;"
-                            class="text-white text-decoration-none  px-1 fs-6 py-1 rounded-2" href="">Mongodb</a>
+                    <li><a style="background-color: #333;" class="text-white text-decoration-none px-3 py-2 fs-6 rounded-2 border border-secondary" href="">Html</a></li>
+                    <li><a style="background-color: #333;"
+                            class="text-white text-decoration-none px-3 py-2 fs-6 rounded-2 border border-secondary" href="">Mongodb</a>
                     </li>
-                    <li><a style="background-color: #808080;"
-                            class="text-white text-decoration-none  px-1 fs-6 py-1 rounded-2" href="">Tailwind</a></li>
+                    <li><a style="background-color: #333;"
+                            class="text-white text-decoration-none px-3 py-2 fs-6 rounded-2 border border-secondary" href="">Tailwind</a></li>
 
                 </ul>
             </div>
@@ -192,36 +170,35 @@
 
         <!-- comfortable -->
 
-        <div class="comfortable w-75 ms-auto mt-5 d-flex justify-content-start gap-5 p-4">
-
+       <div class="comfortable-section w-75 mx-auto mt-5 p-4 ">
+    <div class="row g-4 align-items-center">
+        
+        <div class="col-12 col-lg-6">
             <div class="skills-part">
-                <h2 class="fw-bold">Comfortable:</h2>
+                <h2 class="fw-bold text-white">Comfortable:</h2>
                 <div class="mt-4">
                     <ul class="d-flex flex-wrap list-unstyled gap-3">
-                        <li><a style="background-color: #808080;"
-                                class="text-white text-decoration-none px-2 fs-6 py-1 rounded-2" href="">Sql</a></li>
-                        <li><a style="background-color: #808080;"
-                                class="text-white text-decoration-none px-2 fs-6 py-1 rounded-2" href="">AWS</a></li>
-                        <li><a style="background-color: #808080;"
-                                class="text-white text-decoration-none px-2 fs-6 py-1 rounded-2" href="">Typescript</a>
-                        </li>
-                        <li><a style="background-color: #808080;"
-                                class="text-white text-decoration-none px-2 fs-6 py-1 rounded-2" href="">Next.js</a>
-                        </li>
-                        <li><a style="background-color: #808080;"
-                                class="text-white text-decoration-none px-2 fs-6 py-1 rounded-2" href="">Docker</a></li>
+                        <li><a style="background-color: #333;" class="text-white text-decoration-none px-3 py-2 fs-6 rounded-2 border border-secondary" href="#">Sql</a></li>
+                        <li><a style="background-color: #333;" class="text-white text-decoration-none px-3 py-2 fs-6 rounded-2 border border-secondary" href="#">AWS</a></li>
+                        <li><a style="background-color: #333;" class="text-white text-decoration-none px-3 py-2 fs-6 rounded-2 border border-secondary" href="#">Typescript</a></li>
+                        <li><a style="background-color: #333;" class="text-white text-decoration-none px-3 py-2 fs-6 rounded-2 border border-secondary" href="#">Next.js</a></li>
+                        <li><a style="background-color: #333;" class="text-white text-decoration-none px-3 py-2 fs-6 rounded-2 border border-secondary" href="#">Docker</a></li>
                     </ul>
                 </div>
             </div>
+        </div>
 
-            <div class="education d-flex flex-column align-items-start text-start">
+        <div class="col-12 col-lg-6">
+            <div class="education d-flex flex-column align-items-lg-end text-lg-end">
                 <h3 style="color: #00FFFF;" class="fw-bold">My Education</h3>
-                <p class="fs-6 mb-0">B.Sc in Software Engineering</p>
-                <p class="fs-6 mb-0 opacity-75 small">Bangladesh University Of Business & Technology</p>
+                <p class="fs-6 mb-0 text-white">B.Sc in Software Engineering</p>
+                <p class="fs-6 mb-0 text-secondary small">Bangladesh University Of Business & Technology</p>
                 <p class="fs-6 mb-0 fw-bold" style="color: #00FFFF;">2023-2027</p>
             </div>
         </div>
 
+    </div>
+</div>
 
 
 
@@ -232,15 +209,15 @@
                 <h2 class="fw-bold">Familiar:</h2>
                 <div class="mt-4">
                     <ul class="d-flex flex-wrap list-unstyled gap-3">
-                        <li><a style="background-color: #808080;"
-                                class="text-white text-decoration-none px-2 fs-6 py-1 rounded-2" href="">c++</a></li>
-                        <li><a style="background-color: #808080;"
-                                class="text-white text-decoration-none px-2 fs-6 py-1 rounded-2" href="">Python</a></li>
-                        <li><a style="background-color: #808080;"
-                                class="text-white text-decoration-none px-2 fs-6 py-1 rounded-2" href="">SpringBoot</a>
+                        <li><a style="background-color: #333;"
+                                class="text-white text-decoration-none px-3 py-2 fs-6 rounded-2 border border-secondary" href="">c++</a></li>
+                        <li><a style="background-color: #333;"
+                                class="text-white text-decoration-none px-3 py-2 fs-6 rounded-2 border border-secondary" href="">Python</a></li>
+                        <li><a style="background-color: #333;"
+                                class="text-white text-decoration-none px-3 py-2 fs-6 rounded-2 border border-secondary" href="">SpringBoot</a>
                         </li>
-                        <li><a style="background-color: #808080;"
-                                class="text-white text-decoration-none px-2 fs-6 py-1 rounded-2" href="">Netwoking</a>
+                        <li><a style="background-color: #333;"
+                                class="text-white text-decoration-none px-3 py-2 fs-6 rounded-2 border border-secondary" href="">Netwoking</a>
                         </li>
                     </ul>
                 </div>
@@ -259,16 +236,16 @@
                 <h2 class="fw-bold">Tools:</h2>
                 <div class="mt-4">
                     <ul class="d-flex flex-wrap list-unstyled gap-3">
-                        <li><a style="background-color: #808080;"
-                                class="text-white text-decoration-none px-2 fs-6 py-1 rounded-2" href="">Vs code</a>
+                        <li><a style="background-color: #333;"
+                                class="text-white text-decoration-none px-3 py-2 fs-6 rounded-2 border border-secondary" href="">Vs code</a>
                         </li>
-                        <li><a style="background-color: #808080;"
-                                class="text-white text-decoration-none px-2 fs-6 py-1 rounded-2" href="">Jira</a></li>
-                        <li><a style="background-color: #808080;"
-                                class="text-white text-decoration-none px-2 fs-6 py-1 rounded-2" href="">Trello</a>
+                        <li><a style="background-color: #333;"
+                                class="text-white text-decoration-none px-3 py-2 fs-6 rounded-2 border border-secondary" href="">Jira</a></li>
+                        <li><a style="background-color: #333;"
+                                class="text-white text-decoration-none px-3 py-2 fs-6 rounded-2 border border-secondary" href="">Trello</a>
                         </li>
-                        <li><a style="background-color: #808080;"
-                                class="text-white text-decoration-none px-2 fs-6 py-1 rounded-2" href="">Git</a>
+                        <li><a style="background-color: #333;"
+                                class="text-white text-decoration-none px-3 py-2 fs-6 rounded-2 border border-secondary" href="">Git</a>
                         </li>
                     </ul>
                 </div>
