@@ -12,32 +12,44 @@
 </head>
 
 <body style="background-color: #000000;" class="">
-    <header class="container ">
-        <div class="row ">
+    <header class="container w-75">
+    <nav class="navbar navbar-expand-lg navbar-dark p-4">
+        <div class="container-fluid">
+            
+            <a class="navbar-brand me-auto" href="#">
+                <img src="./icons/logo.png" class="img-fluid" style="max-width: 100px;" alt="Logo">
+            </a>
 
-            <div class="col-9 offset-2  text-white p-4 d-flex justify-content-between align-items-center">
-                <div class="logo">
-                    <img src="./icons/logo.png" style="width: 100px;" alt="Logo">
-                </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <nav>
-                    <ul class="d-flex gap-5 list-unstyled align-items-center">
-                        <li><a class="text-white text-decoration-none" href="">Home</a></li>
-                        <li><a class="text-white text-decoration-none" href="">Portfolio</a></li>
-                        <li><a class="text-white text-decoration-none" href="">Skill</a></li>
-                        <li><a class="text-white text-decoration-none" href="">About</a></li>
-
-                        <li>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-lg-5 text-center align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Skill</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">About</a>
+                    </li>
+                    <li class="nav-item mt-3 mt-lg-0">
+                        <a href="./assests/mehedicv.pdf" download="My_Resume.pdf" class="text-decoration-none">
                             <button class="btn btn-outline-light btn-sm">
                                 <i class="fa-solid fa-download"></i> Resume
                             </button>
-                        </li>
-                    </ul>
-                </nav>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </header>
-
+    </nav>
+</header>
 
     <main class="text-white">
         <div class="banner w-75   mx-auto mt-5 text-white d-flex justify-content-between align-items-center p-5">
@@ -61,6 +73,7 @@
                                 class="fa-brands fa-facebook"></i></a></li>
 
                     <li>
+                          <a href="./assests/mehedicv.pdf" download="My_Resume.pdf" class="text-decoration-none"></a>
                         <button class="btn btn-outline-light btn-sm">
                             <i class="fa-solid fa-download"></i> Resume
                         </button>
@@ -78,7 +91,7 @@
 
         <!-- portfolio -->
 
-        <h2 class="text-center text-white mt-4">Portfolio</h2>
+        <h2 class="text-center text-white mt-4">Architect</h2>
         <div class="w-75 border mx-auto mt-5 d-flex gap-5" style="height: 400px;">
             <div class="picture w-50" style="height: 100%;">
                 <div id="architectCarousel" class="carousel slide h-100" data-bs-ride="carousel">
@@ -98,7 +111,7 @@
                             <img src="./images/architect2.png" class="d-block w-100 h-100" style="object-fit: cover;"
                                 alt="Project 2">
                         </div>
-                       
+
                     </div>
 
                     <button class="carousel-control-prev" type="button" data-bs-target="#architectCarousel"
@@ -114,7 +127,10 @@
 
 
             <div class="contain w-50 d-flex flex-column justify-content-center" style="height: 100%;">
-                <h3 style="color: #00FFFF;">Architect Website </h3>
+                <h3 style="color: #00FFFF;">Architect Website
+                    <a target="_blank" style="color: #fff;" href="https://programming-hero-architect.netlify.app/"><i
+                            class="fa-solid fa-earth-africa"></i></a>
+                </h3>
                 <p class="fs-6">Architectural Designer & Visualizer. Passionate about transforming ideas into structural
                     realities. Focused on modern design, urban planning, and innovative spatial solutions</p>
 
